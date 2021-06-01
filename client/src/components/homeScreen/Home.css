@@ -1,0 +1,29 @@
+.homescreen{
+    max-width: 1350px;
+    margin: 2rem auto;
+}
+.homescreen__title{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.homescreen__products{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    justify-items: center;
+}
+
+@media (max-width: 1250px){
+    .homescreen__products{
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+@media (max-width: 950px){
+    .homescreen__products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px){
+    .homescreen__products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
